@@ -1,0 +1,155 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 920px;
+  /*display: flex;
+  justify-content: center;*/
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.dashboard {
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 2px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background: whitesmoke;
+}
+
+.btn:hover, .active {
+  background: lightgray;
+}
+
+
+
+
+.tree {
+  border: 1px solid gray;
+  overflow: auto;
+}
+
+.tree ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tree a {
+  all: unset;
+  cursor: pointer;
+}
+
+.tree li {/*:not(.root)*/
+  margin-left: 20px;
+  padding: 2px;
+}
+
+.context {
+  display: none;
+  position: absolute;
+  background: lightgray;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.context a {
+  display: block;
+  padding: 2px;
+}
+
+.tree a:hover {
+  background: lightgrey;
+}
+
+.context a:hover {
+  background: pink;
+}
+
+
+
+table {
+  width:100%;
+}
+
+table, tr, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  background: lightgrey;
+}
+
+td {
+  padding: 2px;
+}
+
+
+.modal {
+  display: none;
+  background: white;
+  border: 1px solid black;
+  top: 10px;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 3px;
+}
+
+.modal .header {
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 2px 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal .body, .modal .footer {
+  padding: 2px 3px;
+}
+
+.modal .footer {
+  border-top: inherit;
+}
+
+select {
+  width: 300px;
+  max-width: 300px;
+}
+
+option {
+  -moz-white-space: pre-wrap;
+  -o-white-space: pre-wrap;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+}
+
+.shield {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 9998;
+}

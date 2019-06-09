@@ -4,7 +4,7 @@
     <link rel='icon' href='/favicon.png'>
     <script type='text/javascript' src='/jquery.min.js'></script>
     <script type='text/javascript'>
-    var vBASE = 'https://genco.one';
+    var vBASE = 'https://genco.one:5432';
     function X() {
       $.ajax({
         url: vBASE + '/_debug',

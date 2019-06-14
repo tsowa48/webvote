@@ -153,3 +153,9 @@ option {
   opacity: 0.4;
   z-index: 9998;
 }
+
+.vote {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 2px 5px;
+}

@@ -41,7 +41,7 @@
 								for(var i = 0; i < data.length; ++i)
 									fullAddress = data[i].name + ', ' + fullAddress;
                 fullAddress = fullAddress.substr(0, fullAddress.length - 2);
-                var secret = prompt('Контрольное слово:');
+                var secret = prompt('Контрольное слово:', '');
                 $('#address').text(fullAddress);
 								getVotes(lon, lat, secret);
 							}
